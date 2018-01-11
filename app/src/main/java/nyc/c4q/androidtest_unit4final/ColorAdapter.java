@@ -43,10 +43,11 @@ public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ColorViewHol
             Log.d(TAG, "Unable to parse color: " + color);
             holder.name.setTextColor(Color.parseColor("#00ff00"));
             // TODO: When the name in a viewHolder is clicked,
-            // display a long toast with the text "{color_name} has a HEX value of {color_hex}
-            // for example: "blue has a HEX value of #0000ff"
+            Log.d(TAG, "Unable to parse color: " + color);
+            holder.name.setTextColor(Color.parseColor("#00ff00"));
         }
     }
+
 
     @Override
     public int getItemCount() {
